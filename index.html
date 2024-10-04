@@ -1,0 +1,287 @@
+<style>
+  .main {
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+    width: 600px;
+  }
+  :after,
+  :before {
+    box-sizing: border-box;
+  }
+  main {
+    display: block;
+  }
+
+  .big-circle,
+  .icon-block {
+    align-items: center !important;
+    border-radius: 50%;
+    display: flex !important;
+    display: -webkit-flex;
+    justify-content: center !important;
+    -webkit-justify-content: center;
+  }
+
+  .big-circle {
+    animation: Rotate 20s linear infinite;
+    border: 2px solid red;
+    height: 100%;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+  }
+
+  .icon-block:first-child {
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+  .icon-block {
+    /* background: #fff; */
+    /* border: 1px solid #717171; */
+    box-shadow: 0 2px 4px 0 transparent;
+    -webkit-box-shadow: 0 2px 4px 0 transparent;
+    height: 129px;
+    position: absolute;
+    width: 129px;
+  }
+  .big-circle,
+  .icon-block {
+    align-items: center !important;
+    border-radius: 50%;
+    display: flex !important
+    ;
+    display: -webkit-flex;
+    justify-content: center !important;
+  }
+  .icon-block:nth-child(2) {
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+  }
+
+  .icon-block:nth-child(3) {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+  .icon-block:nth-child(4) {
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .icon-block img {
+    animation: Rotate-reverse 20s linear infinite;
+    margin: 0 auto;
+    transition: all 0.5s ease-in-out;
+    width: 80px;
+    display: flex;
+  }
+  img,
+  svg {
+    vertical-align: middle;
+  }
+
+  .circle {
+    animation: Rotate 20s linear infinite;
+    border: 2px solid red;
+    border-radius: 50%;
+    height: 75%;
+    left: 12.5%;
+    position: absolute;
+    top: 12.5%;
+    transition: all 0.5s ease-in-out;
+    width: 75%;
+  }
+
+  .center-logo {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .center-logo img {
+    max-width: 200px;
+  }
+
+  @keyframes Rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes Rotate-reverse {
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+
+  .big-circle {
+    animation: Rotate 20s linear infinite;
+  }
+
+  .icon-block img {
+    animation: Rotate-reverse 20s linear infinite;
+  }
+
+  .icons-block:first-child {
+    left: 15%;
+    top: 15%;
+    transform: translate(-50%, -50%);
+  }
+  .icons-block {
+    /* background: #fff; */
+    /* border: 1px solid #717171; */
+    box-shadow: 0 2px 4px 0 transparent;
+    height: 129px;
+    position: absolute;
+    width: 129px;
+  }
+  .circle,
+  .icons-block {
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+  }
+  .icons-block:nth-child(2) {
+    right: 15%;
+    top: 15%;
+    transform: translate(50%, -50%);
+  }
+
+  .icons-block:nth-child(3) {
+    bottom: 15%;
+    left: 85%;
+    transform: translate(-50%, 50%);
+  }
+  .icons-block:nth-child(4) {
+    left: 15%;
+    top: 85%;
+    transform: translate(-50%, -50%);
+  }
+  .icons-block img {
+    animation: Rotate-reverse 20s linear infinite;
+    margin: 0 auto;
+    transition: all 0.5s ease-in-out;
+    width: 80px;
+  }
+
+  @media (max-width: 768px) {
+    .main {
+      width: 70vw;
+      height: 70vw;
+    }
+
+    .icon-block,
+    .icons-block {
+      height: 20%; /* Adjust size for smaller screens */
+      width: 20%;
+    }
+    .icon-block img {
+      height: 70%; /* Adjust size for smaller screens */
+      width: 70%;
+    }
+    .icons-block img {
+      height: 70%; /* Adjust size for smaller screens */
+      width: 70%;
+    }
+
+    .center-logo {
+      max-width: 30%; /* Further reduce the size of the logo */
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    .center-logo img {
+      max-width: 50%; /* Further reduce the size of the logo */
+    }
+  }
+</style>
+
+<main class="main main-tech-main">
+  <main class="big-circle">
+    <main class="icon-block">
+      <img
+        class="hover"
+        src="https://americanwebexpert.com/wp-content/uploads/2024/10/tech-img-1.png"
+        alt="National Logo Design"
+      />
+    </main>
+    <main class="icon-block">
+      <img
+        class="hover"
+        src="https://americanwebexpert.com/wp-content/uploads/2024/10/tech-img-2.png"
+        alt="National Logo Design"
+      />
+    </main>
+    <main class="icon-block">
+      <img
+        class="hover"
+        src="https://americanwebexpert.com/wp-content/uploads/2024/10/tech-img-3.png"
+        alt="National Logo Design"
+      />
+    </main>
+    <main class="icon-block">
+      <img
+        class="hover"
+        src="https://americanwebexpert.com/wp-content/uploads/2024/10/tech-img-4.png"
+        alt="National Logo Design"
+      />
+    </main>
+  </main>
+  <main class="circle">
+    <main class="icons-block">
+      <img
+        class="hover"
+        src="https://americanwebexpert.com/wp-content/uploads/2024/10/tech-img-5.png"
+        alt="National Logo Design"
+      />
+    </main>
+    <main class="icons-block">
+      <img
+        class="hover"
+        src="https://americanwebexpert.com/wp-content/uploads/2024/10/tech-img-6.png"
+        alt="National Logo Design"
+      />
+    </main>
+    <main class="icons-block">
+      <img
+        class="hover"
+        src="https://americanwebexpert.com/wp-content/uploads/2024/10/tech-img-7.png"
+        alt="National Logo Design"
+      />
+    </main>
+    <main class="icons-block">
+      <img
+        class="hover"
+        src="https://americanwebexpert.com/wp-content/uploads/2024/10/tech-img-8.png"
+        alt="National Logo Design"
+      />
+    </main>
+  </main>
+  <main class="center-logo">
+    <img
+      id="cord-cover"
+      src="https://americanwebexpert.com/wp-content/uploads/2024/10/tech-img-1.png"
+      alt="National Logo Design"
+    />
+  </main>
+</main>
+
+<script>
+  const iconBlocks = document.querySelectorAll(
+    ".icon-block img, .icons-block img"
+  );
+  const centerLogo = document.getElementById("cord-cover");
+
+  iconBlocks.forEach((icon) => {
+    icon.addEventListener("mouseenter", function () {
+      centerLogo.src = this.src;
+    });
+  });
+</script>
